@@ -1,0 +1,15 @@
+{
+  "name": "ats-result",
+  "version": "1.0.0",
+  "description": "",
+  "main": "N/A",
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "",
+  "license": "ISC"
+}
