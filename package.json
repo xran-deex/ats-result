@@ -1,16 +1,16 @@
 {
   "name": "ats-result",
   "version": "1.0.0",
-  "description": "",
+  "description": "Provides a Result type with Ok and Error constructors",
   "main": "N/A",
-  "directories": {
-    "src": "src",
-    "test": "test"
-  },
   "scripts": {
     "test": "make test",
-    "install": "make"
+    "postinstall": "make"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Randy Valis",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://ubuntu-netfu.lan:3000/randy.valis/ats-result"
+  }
 }
