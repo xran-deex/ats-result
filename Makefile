@@ -12,6 +12,7 @@ ifdef PTHREAD
 endif
 APP     = main
 EXEDIR  = target
+TESTDIR = test
 LIBDIR  = lib
 LIB     = libatsresult.so
 ARCHIVE = libatsresult.a
@@ -47,8 +48,8 @@ clean:
 run: $(EXEDIR)/$(APP) test
 	./$(EXEDIR)/$(APP)
 test: $(EXEDIR)/$(APP)
-$(EXEDIR)/$(APP): test/main.dats $(LIBDIR)/$(ARCHIVE)
+$(EXEDIR)/%: $(TESTDIR)/%.dats $(LIBDIR)/$(ARCHIVE)
 	$(dir_guard)
-	PATSRELOCROOT=$(PWD) $(ATSCC) $(ATSCCFLAGS) -o $@ test/main.dats -cleanaft ./lib/libatsresult.a
+	PATSRELOCROOT=$(PWD) $(ATSCC) $(ATSCCFLAGS) -o $@ $< -cleanaft $(LIBDIR)/$(ARCHIVE)
 	$(EXEDIR)/$(APP)
 .SILENT: run
