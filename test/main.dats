@@ -1,4 +1,4 @@
-#include "ats-result/ats-result.hats"
+#include "{$PATSRELOCROOT}/ats-result.hats"
 
 fn test{n:nat | n < 2}(i: int(n)): result_vt(string, string) = res where {
     val res = (if i = 0 then Ok("Woohoo!") else Error("Grrrr")): result_vt(string, string)
