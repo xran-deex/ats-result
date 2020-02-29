@@ -50,4 +50,5 @@ test: $(EXEDIR)/$(APP)
 $(EXEDIR)/$(APP): test/main.dats $(LIBDIR)/$(ARCHIVE)
 	$(dir_guard)
 	PATSRELOCROOT=$(PWD) $(ATSCC) $(ATSCCFLAGS) -o $@ test/main.dats -cleanaft ./lib/libatsresult.a
+	$(EXEDIR)/$(APP)
 .SILENT: run

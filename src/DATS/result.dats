@@ -15,6 +15,3 @@ case+ r of
 
 implement {a,b}
 print_result(r) = fprint_result(stdout_ref, r)
-
-overload fprint with fprint_result
-overload print with print_result
