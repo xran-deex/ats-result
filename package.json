@@ -4,8 +4,7 @@
   "description": "Provides a Result type with Ok and Error constructors",
   "main": "N/A",
   "scripts": {
-    "test": "make test",
-    "postinstall": "make"
+    "test": "make test"
   },
   "author": "Randy Valis",
   "license": "ISC",
