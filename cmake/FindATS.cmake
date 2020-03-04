@@ -42,10 +42,8 @@ MESSAGE (STATUS "Finding ATS")
 
 INCLUDE (ATSCC)
 
-
-
 FIND_PATH (ATS_HOME
-	NAMES bin/atscc
+	NAMES bin/patscc
 	PATHS ENV PATSHOME)
 
 SET (ATS_INCLUDE_DIR ${ATS_HOME} ${ATS_HOME}/ccomp/runtime)
