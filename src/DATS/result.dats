@@ -15,3 +15,10 @@ case+ r of
 
 implement {a,b}
 print_result(r) = fprint_result(stdout_ref, r)
+
+implement {a,b,c}
+fmap(map, res) = result where {
+    val result = (case+ res of
+    | ~Ok(x) => Ok(map(x))
+    | ~Error(e) => Error(e)): result_vt(a, b)
+}

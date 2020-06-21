@@ -1,0 +1,4 @@
+.build
+target
+*.c
+node_modules
