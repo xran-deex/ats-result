@@ -1,5 +1,8 @@
-#include "../ats-result.hats"
-#include "ats-unit-testing/ats-unit-testing.hats"
+#include "ats-result.hats"
+#include "ats-unit-testing.hats"
+
+staload $UT
+staload $R
 
 fn test{n:nat | n < 2}(i: int(n)): result_vt(string, string) = res where {
     val res = (if i = 0 then Ok("Woohoo&") else Error("Grrrr")): result_vt(string, string)

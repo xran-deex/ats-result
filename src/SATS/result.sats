@@ -1,3 +1,4 @@
+#define ATS_PACKNAME "ats-result"
 
 dataviewtype result_vt(a:vt@ype, b:vt@ype) =
 | Ok of a

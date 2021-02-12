@@ -1,5 +1,7 @@
-#include "./../HATS/includes.hats"
+#include "HATS/includes.hats"
 #define ATS_DYNLOADFLAG 0
+
+staload $RESULT
 
 implement {a,b} is_ok(r) = res where {
     val res = case+ r of
