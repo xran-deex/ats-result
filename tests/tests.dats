@@ -2,7 +2,7 @@
 #include "ats-unit-testing.hats"
 
 staload $UT
-staload $R
+staload $RESULT
 
 fn test{n:nat | n < 2}(i: int(n)): result_vt(string, string) = res where {
     val res = (if i = 0 then Ok("Woohoo&") else Error("Grrrr")): result_vt(string, string)
