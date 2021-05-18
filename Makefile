@@ -4,8 +4,8 @@ ATSOPT=$(PATSHOME)/bin/patsopt
 ATSFLAGS+=-IATS src
 
 CFLAGS+=-DATS_MEMALLOC_LIBC -D_DEFAULT_SOURCE -I $(PATSHOME)/ccomp/runtime -I $(PATSHOME) -O3 -I src
-LDFLAGS+=-L $(PATSHOME)/ccomp/atslib/lib
-LIBS+=-latslib
+LDFLAGS+=
+LIBS+=
 
 NAME := libats-result
 SNAME   :=  $(NAME).a
